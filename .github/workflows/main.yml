@@ -23,6 +23,6 @@ env:
 jobs:
   build:
     runs-on: buildjet-2vcpu-ubuntu-2204
-    timeout-minutes: 1
+    timeout-minutes: 2
     steps:
       - uses: actions/checkout@v4
