@@ -1,6 +1,18 @@
 name: testing
 concurrency: testing-v1
 
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        type: choice
+        description: deploy target
+        required: true
+        default: staging
+        options:
+          - staging
+          - production
+
 defaults:
   run:
     working-directory: ./foo
