@@ -14,9 +14,9 @@ on:
   #         - staging
   #         - production
 
-defaults:
-  run:
-    working-directory: ./foo
+# defaults:
+#   run:
+#     working-directory: ./foo
 
 env:
   TZ: Asia/Tokyo
