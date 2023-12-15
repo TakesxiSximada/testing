@@ -29,7 +29,7 @@ jobs:
       - id: foo
         run: |
           echo '{"value": "testing"}'
-      - run: echo ${{ steps.foo.outputs.value }}
+      - run: echo ${{ steps.foo.outputs }}
 
       # - uses: actions/checkout@v4
       # - uses: docker/setup-buildx-action@v3
