@@ -26,9 +26,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 1
     steps:
-      - run: echo ok
-        id: foo
+      - id: foo
+        run: |
+          echo '{"value": "testing"}'
       - run: echo ${{ steps.foo.outputs.value }}
+
       # - uses: actions/checkout@v4
       # - uses: docker/setup-buildx-action@v3
       # - uses: docker/metadata-action@v5
